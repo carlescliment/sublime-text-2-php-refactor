@@ -28,7 +28,7 @@ class Prefs:
 
     @staticmethod
     def load():
-        settings = sublime.load_settings('sublime-text-2-php-refactor.sublime-settings')
+        settings = sublime.load_settings('PHP Refactor.sublime-settings')
         Prefs.backup = settings.get('backup')
         msg("Backup file before applying changes? %s" % Prefs.backup)
         Prefs.confirm = settings.get('confirm')
